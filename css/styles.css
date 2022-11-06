@@ -206,16 +206,13 @@ body {
 
 
 .list-item {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
     margin-bottom: 30px;
     background-color: var(--background-section-fourth);
 }
-
-.icon {
-    
-}
-
 
 .title-section {
     font-weight: 700;
