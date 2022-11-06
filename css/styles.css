@@ -204,20 +204,21 @@ body {
     background: var(--button-active);
 }
 
-.list-item::before {
+/* .list-item::before {
     content: '';
     display: block;
     height: 120px;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-bottom: 30px;
+    background-color: var(--background-section-fourth);
+} */
+
+.list-item {
+    display: block;
+    height: 120px;
     margin-bottom: 30px;
     background-color: var(--background-section-fourth);
 }
 
-.icon-antenna::before {
-    background-image: url(../images/img2.jpg);
-}
 
 
 .title-section {
