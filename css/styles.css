@@ -9,7 +9,7 @@
     --contacts: #757575;
     --background-dark: #2F303A;
     --background-rgba: rgba(255, 255, 255, 0.6);
-    --background-section-fourth: #F5F4FA;
+    --background-section-fourth: #F5F4FA; 
     --button-rgba: rgba(0, 0, 0, 0.15);
     --button-rgba-second: rgba(0, 0, 0, 0.1);
     --button-rgba-third: rgba(0, 0, 0, 0.08);
@@ -204,6 +204,22 @@ body {
     background: var(--button-active);
 }
 
+.list-item::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    background-color: var(--background-section-fourth);
+}
+
+.icon-antenna::before {
+    background-image: url(../images/img2.jpg);
+}
+
+
 .title-section {
     font-weight: 700;
     font-size: 14px;
@@ -259,7 +275,10 @@ body {
 
 .card {
     background-color: var(--third-web-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
+
 
 .team-card {
     padding-top: 30px;
@@ -353,6 +372,10 @@ body {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.flex-element:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-element:nth-child(3n) {
