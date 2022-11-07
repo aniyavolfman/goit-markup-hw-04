@@ -347,6 +347,32 @@ body {
     padding-bottom: 0;
 }
 
+.clients{
+    display: flex;
+    justify-content:space-between;
+}
+
+.link-clients {
+    display: inline-flex;
+    color: var(--media-color);
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--media-color);
+}
+
+.link-clients:hover,
+.link-clients:focus {
+    color: var(--secondary-web-text-color);
+    border: 1px solid var(--secondary-web-text-color);
+}
+
+.team-icon {
+    fill: currentColor;
+}
+
 /* portfolio */
 
 .portfolio-btn {
