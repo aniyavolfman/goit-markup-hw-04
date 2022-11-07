@@ -17,6 +17,7 @@
     --button-active: #188CE8;
     --header-border: #ECECEC;
     --border: #EEEEEE;
+    --media-color: #AFB1B8;
 }
 
 body {
@@ -283,6 +284,8 @@ body {
 .team-card {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
 }
 
 .subtitle {
@@ -302,6 +305,37 @@ body {
     color: var(--contacts);
 }
 
+.team-media {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-media {
+    display: inline-flex;
+    color: var(--media-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.link-media:hover, .link-media:focus {
+    background-color: var(--secondary-web-text-color);
+    color: var(--third-web-text-color);
+}
+
+.team-icon {
+    fill: currentColor;
+}
 
 .section {
     padding-top: 94px;
