@@ -18,6 +18,7 @@
     --header-border: #ECECEC;
     --border: #EEEEEE;
     --media-color: #AFB1B8;
+    --footer-media-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -311,7 +312,7 @@ body {
     justify-content: space-around;
 }
 
-.item-media {
+.item-media, .footer-item-media {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -443,6 +444,14 @@ body {
     background-color: var(--background-dark);
 }
 
+.container-footer {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-contacts {
+    margin-right: 70px;
+}
 
 .contacts-info {
     font-style: normal;
@@ -482,4 +491,42 @@ body {
 
 .location:hover, .location:focus {
     color: var(--secondary-web-text-color);
+}
+
+.join {
+    color: var(--third-web-text-color);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-link-media {
+    display: inline-flex;
+    color: var(--third-web-text-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--footer-media-color) ;
+}
+
+.footer-link-media:hover,
+.footer-link-media:focus {
+    background-color: var(--secondary-web-text-color);
+    color: var(--third-web-text-color);
+}
+
+.footer-item-media:not(:last-child) {
+    margin-right: 10px;
 }
