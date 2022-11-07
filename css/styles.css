@@ -144,10 +144,9 @@ body {
 
 .icon-header {
     vertical-align: middle;
-    
-   
+    fill: currentColor;  
 }
-   
+ 
 
 /*----main content----*/
 
